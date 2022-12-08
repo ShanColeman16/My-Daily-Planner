@@ -1,7 +1,15 @@
+$
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(".hour").wrapAll("div class='new' />");
+
+$(".saveBtn").click(function(){
+  console.log($(this).parent().attr("id"));
+  var text  = $(this).siblings(".description").val();
+  var hour =  $(this).parent().attr("id");
+  localStorage.setItem(hour, text);
+})
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
