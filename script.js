@@ -11,10 +11,11 @@ $(".saveBtn").click(function () {
   var text = $(this).siblings(".description").val();
   var hour = $(this).parent().attr("id");
   localStorage.setItem(hour, text);
-})
+});
 var currentHour = dayjs();
 $("#currentHour").hour
-
+var time = document.querySelectorAll(".time-block").length;
+for (var i =0; i  < 0;  i++);
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
