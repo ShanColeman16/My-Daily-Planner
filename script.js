@@ -12,8 +12,7 @@ $(document).ready(function () {
     var hour = $(this).parent().attr("id");
     localStorage.setItem(hour, text);
   })
-var saveButtonEl  = true;
-saveButtonEl.addEventListner("click," );
+
 
   $(function () {
     // TODO: Add a listener for click events on the save button. This code should
