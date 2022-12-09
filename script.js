@@ -12,7 +12,8 @@ $(".saveBtn").click(function () {
   var hour = $(this).parent().attr("id");
   localStorage.setItem(hour, text);
 })
-
+var currentHour = dayjs();
+$("#currentHour").hour
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
