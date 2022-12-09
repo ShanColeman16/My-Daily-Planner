@@ -16,14 +16,15 @@ var currentHour = dayjs();
 $("#currentHour").hour
 var time = document.querySelectorAll(".time-block").length;
 for (var i =0; i  < 0;  i++);
-if (hour  < currentHour) {
+if (time < currentHour) {
   console.log("past");  
-} else if (hour === currentHour)  {
+} else if (time === currentHour)  {
   console.log ("present");
 } else {
   console.log("future");
 }
-$(function () {
+$(".time-block").on("click",  ".saveBtn", function() {
+  console.log(this);
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
